@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "skyblockitems1214",
+  "version": "${version}",
+  "name": "skyblockitems1214",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/skyblockitems1214/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "yuiopd.com.skyblockitems1214.client.Skyblockitems1214DataGenerator"
+    ],
+    "client": [
+      "yuiopd.com.skyblockitems1214.client.Skyblockitems1214Client"
+    ],
+    "main": [
+      "yuiopd.com.skyblockitems1214.Skyblockitems1214"
+    ]
+  },
+  "mixins": [
+    "skyblockitems1214.mixins.json",
+    {
+      "config": "skyblockitems1214.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
