@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    " # ",
+    " D "
+  ],
+  "key": {
+    "#": "minecraft:ender_eye",
+    "D": "minecraft:diamond"
+  },
+  "result": {
+    "id": "skyblockitems1214:aote",
+    "count": 1
+  }
+}
