@@ -1,17 +1,13 @@
 package yuiopd.com.skyblockitems1214.teleport;
 
-import net.minecraft.block.AirBlock;
 import net.minecraft.entity.EntityType;
 
 import net.minecraft.entity.mob.VexEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemUsageContext;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
-import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.hit.HitResult;
-import net.minecraft.util.math.BlockPos;
 
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
@@ -35,7 +31,6 @@ public class Aote extends Item {
         VexEntity m = new VexEntity(EntityType.VEX, world);
         m.setPosition(p);
         world.spawnEntity(m);
-        var e = m.getPos();
         if (p.y % 1 == 0) {
             System.out.println("tp");
             user.setPosition(p);
@@ -71,7 +66,7 @@ public class Aote extends Item {
 
 
         } else {
-            user.setPos(p.x,p.y+2,p.z);
+            user.setPos(p.x,p.y,p.z);
         }
         m.remove(KILLED);//TODO: fix right click on blocks not working
 

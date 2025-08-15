@@ -21,11 +21,7 @@
     ]
   },
   "mixins": [
-    "skyblockitems1214.mixins.json",
-    {
-      "config": "skyblockitems1214.client.mixins.json",
-      "environment": "client"
-    }
+
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
